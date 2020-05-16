@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(42, 46, 49);
+	font-size: 1em;
+}
+.settings-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 0;
+	width: 320px;
+	min-height: 100vh;
+	background: #DBE0E4;
+}
+
+/* Heading */
+
+h1 {
+	color: #555;
+	margin: 10px 18px;
+}
+h2 {
+	 display: inline-block;
+	 font-size: .9em;
+	 font-weight: 300;
+	 flex-basis: 75%;
+ }
+
+
+
+/* Search */
+.search {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 90%;
+	margin: auto;
+	padding: 5px 10px;
+	border-radius: 8px;
+	background: #ccc;
+}
+
+.search-placeholder {
+	color: #777;
+	font-size: 21px;
+	padding-left: 6px;
+	flex-basis: 90%;
+}
+
+/* Profile Box */
+
+.profile {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	background: url('../images/icons/placeholder.png') no-repeat 8% 50% #fff;
+	height: 76px;
+	margin: 20px auto;
+	padding: 10px;
+	color: #777;
+}
+
+.profile span {
+	display: inline-block;
+	font-size: .9em;
+	margin-bottom: 4px;
+}
+
+.profile p {
+	font-size: .7em;
+}
+
+.profile-text {
+	flex-basis: 90%;
+	padding-left: 60px;
+}
+
+/* Blocks */
+
+.blocks {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Options */
+
+.options {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	height: 46px;
+	color: #777;
+	padding-left: 10px;
+}
+
+.info,
+.toggle {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	height: 44px;
+	border-bottom: 1px solid #ccc;
+	padding: 0 0 0 6px;
+}
+
+.arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid #ccc;
+	height: 44px;
+	padding: 11px 30px;
+}
+
+.arrow span {
+	font-size: .8em;
+	color: #bbb;
+	margin-right: 16px;
+}
+
+.last {
+	border-bottom: none;
+}
+
+.icons {
+	align-self: center;
+}
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+
